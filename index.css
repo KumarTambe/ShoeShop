@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    font-family:"Montserrat";
+    background:linear-gradient(145deg,#000,white);
+}
+
+.header{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.header .logo {
+    font-size:35px;
+    margin-left:20px;
+    cursor: pointer;
+}
+.header ul{
+    display: flex;
+}
+
+.header li {
+    font-size:20px;
+    list-style-type: none;
+    margin-right: 80px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+li a::after {
+    content:"";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform: scaleX(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+li a:hover::after {
+    transform: scaleX(1);
+}
+
+.log {
+    font-size: 15px;
+    background-color:rgb(26, 25, 25);
+    padding:12px 30px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+ 
+}
+.log:hover {
+    background-color: #000;
+}
+
+.body{
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    gap:40px;
+}
+.item{
+    background-color: rgb(238, 237, 237);
+    width: 297px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 17px;
+    border-radius: 7px;
+    margin-bottom: 100px;
+}
+.item {
+    transition: 0.3s;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.item:hover {
+    box-shadow: 0 30px 70px #000;
+    transform: scale3d(1.05, 1.05, 1.05);
+}
+
+img {
+    height: 200px;
+    width: 200px;
+    margin:auto;
+}
+
+.adidas, .puma{
+    background-color: whitesmoke;
+}
+
+.container h1 {
+    font-size: 33px;
+    margin-bottom:8px;
+}
+
+.container p{
+    opacity:0.8;
+    font-size:13px;
+    margin-bottom: 25px;
+}
+
+.container span {
+    font-size:23px;
+    margin-bottom: 30px;
+}
+
+.container button {
+    font-size: 15px;
+    background-color:rgb(26, 25, 25);
+    padding:12px 30px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    color: white;
+}
+.container .btn1{
+    margin-right:20px;
+}
+
+.container button:hover {
+    background-color: #000;
+}
