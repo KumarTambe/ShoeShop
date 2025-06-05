@@ -17,15 +17,19 @@ body {
     font-size:35px;
     margin-left:20px;
     cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .header ul{
     display: flex;
+    margin-top:0;  
 }
 
 .header li {
     font-size:20px;
     list-style-type: none;
     margin-right: 80px;
+    margin-top: 10px;
 }
 
 li a {
@@ -52,17 +56,17 @@ li a:hover::after {
 
 .log {
     font-size: 15px;
-    background-color:rgb(26, 25, 25);
+    background-color:white;
     padding:12px 30px;
-    border: none;
     border-radius: 6px;
-    color: white;
+    color: black;
     margin-right: 20px;
     cursor: pointer;
- 
+    border: 2px solid black;
 }
 .log:hover {
     background-color: #000;
+    color:white;
 }
 
 .body{
@@ -123,17 +127,22 @@ img {
     margin-bottom: 30px;
 }
 
+.container i {
+    font-size:15px;
+    margin-right: 5px;
+}
+
 .container button {
     font-size: 15px;
     background-color:rgb(26, 25, 25);
-    padding:12px 30px;
+    padding:12px 25px;
     border: none;
     border-radius: 6px;
     margin-bottom: 15px;
     color: white;
 }
 .container .btn1{
-    margin-right:20px;
+    margin-right:15px;
 }
 
 .container button:hover {
