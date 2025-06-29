@@ -1,150 +1,155 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 body {
-    font-family:"Montserrat";
-    background:linear-gradient(145deg,#000,white);
+  font-family: "Montserrat";
+  background: linear-gradient(145deg, #000, white);
+  max-height: 100%vh;
 }
 
-.header{
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 60px;
+.header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 150px;
+  margin-top: 20px;
 }
 
 .header .logo {
-    font-size:35px;
-    margin-left:20px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    margin-top: 10px;
+  font-size: 45px;
+  margin-left: 25px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
-.header ul{
-    display: flex;
-    margin-top:0;  
+.header ul {
+  display: flex;
+  margin-top: 0;
 }
 
 .header li {
-    font-size:20px;
-    list-style-type: none;
-    margin-right: 80px;
-    margin-top: 10px;
+  font-size: 25px;
+  list-style-type: none;
+  margin-right: 80px;
+  margin-top: 22px;
 }
 
 li a {
-    text-decoration: none;
-    color: white;
-    position: relative;
+  text-decoration: none;
+  color: white;
+  position: relative;
 }
 
 li a::after {
-    content:"";
-    position: absolute;
-    height: 2px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    background-color: white;
-    transform: scaleX(0);
-    transition: transform 0.2s ease-in-out;
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
 }
 
 li a:hover::after {
-    transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .log {
-    font-size: 15px;
-    background-color:white;
-    padding:12px 30px;
-    border-radius: 6px;
-    color: black;
-    margin-right: 20px;
-    cursor: pointer;
-    border: 2px solid black;
+  font-size: 18px;
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 8px;
+  color: grey;
+  margin-right: 20px;
+  cursor: pointer;
+  border: 2px solid black;
 }
 .log:hover {
-    background-color: #000;
-    color:white;
+  background-color: #000;
+  color: white;
 }
 
-.body{
-    height:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.body {
+  height: 100%vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.container{
-    display: flex;
-    gap:40px;
-}
-.item{
-    background-color: rgb(238, 237, 237);
-    width: 297px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 17px;
-    border-radius: 7px;
-    margin-bottom: 100px;
+.container {
+  display: flex;
+  gap: 80px;
+  margin-bottom: 50px;
+  max-width: 100%;
 }
 .item {
-    transition: 0.3s;
-    backface-visibility: hidden;
-    transform: translateZ(0);
+  background-color: rgb(238, 237, 237);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  border-radius: 7px;
+  margin-bottom: 100px;
+}
+.item {
+  transition: 0.3s;
+  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 .item:hover {
-    box-shadow: 0 30px 70px #000;
-    transform: scale3d(1.05, 1.05, 1.05);
+  box-shadow: 0 30px 70px #000;
+  transform: scale3d(1.05, 1.05, 1.05);
 }
 
 img {
-    height: 200px;
-    width: 200px;
-    margin:auto;
+  height: 270px;
+  width: 300px;
+  margin: auto;
 }
 
-.adidas, .puma{
-    background-color: whitesmoke;
+.adidas,
+.puma {
+  background-color: whitesmoke;
 }
 
 .container h1 {
-    font-size: 33px;
-    margin-bottom:8px;
+  font-size: 33px;
+  margin-bottom: 8px;
 }
 
-.container p{
-    opacity:0.8;
-    font-size:13px;
-    margin-bottom: 25px;
+.container p {
+  opacity: 0.8;
+  font-size: 16px;
+  margin-bottom: 25px;
 }
 
 .container span {
-    font-size:23px;
-    margin-bottom: 30px;
+  font-size: 23px;
+  margin-bottom: 30px;
 }
 
 .container i {
-    font-size:15px;
-    margin-right: 5px;
+  font-size: 15px;
+  margin-right: 5px;
 }
 
 .container button {
-    font-size: 15px;
-    background-color:rgb(26, 25, 25);
-    padding:12px 25px;
-    border: none;
-    border-radius: 6px;
-    margin-bottom: 15px;
-    color: white;
+  font-size: 16px;
+  background-color: rgb(26, 25, 25);
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  color: white;
 }
-.container .btn1{
-    margin-right:15px;
+.container .btn1 {
+  margin-right: 10px;
 }
 
 .container button:hover {
-    background-color: #000;
+  background-color: #000;
 }
